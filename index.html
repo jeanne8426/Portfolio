@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 길예진의 포트폴리오 사이트입니다.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script type="text/javascript" src="resources/js/script.js"></script>
+</head>
+<style>
+    div{
+        /* border:solid 1px #fff; */
+    }
+</style>
+<body>
+    <div id="wrap">
+        <div id="contents">
+            <div class="profile">
+                <div class="profile-img"><img src="resources/img/meW.jpg"></div>
+            </div>
+            <div class="login">
+                <div class="name">Ye Jin</div>
+                <div class="login-btn">로그인</div>
+                <div class="welcome"><p class="loader"></p>반갑습니다. 개발자 길예진입니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrap2">
+        <div id="contents2">
+            <div class="install">
+                <div class="install-info"></div>
+                <div class="profile-con"></div>
+            </div>
+        </div>
+        <div id="header">
+            <div id="header-left">
+                <div class="window"><i class="fab fa-windows"></i></div>
+            </div>
+            
+            <div id="header-right">
+                <div class="weather">
+                        <div class="CurrIcon"></div>
+                        <div class="CurrTemp"></div>
+                    </div>     
+                <div class="clock">
+                    <p id="usingFunction">2021. 11. 2. 오전 1:55:27</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+//시계
+function locale (){ 	 return new Date().toLocaleString(); 	 } 
+document.getElementById( 'usingFunction' ).innerHTML = locale(); 
+setInterval ( function() { document.getElementById("usingFunction").innerHTML = locale(); } , 1000 );
+    
+    </script>
+</body>
+</html>

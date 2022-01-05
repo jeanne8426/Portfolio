@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'KoPubDotumMedium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rose';
+    src: url('../font/ASIA유치원B.TTF') format('truetype');
+}
+
+body{
+    font-family: 'KoPubDotumMedium';
+}
+
+/* div{
+    border:solid 1px;
+} */
+
+/* title-page */
+
+
+#title-page, #profile-page{
+    width:90%;
+    height: 95%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#line{
+    position: fixed;
+    right: 0px;
+    width: 5%;
+    height: 100%;
+    z-index: 1;
+}
+
+#line>img{
+    width:100%;
+    margin-top:20px;
+    z-index:1;
+    width:70%;
+    height:auto;
+}
+
+.fixed{
+    width:100%;
+    margin-top:30px;
+    padding-top: 18px;
+    font-size:1.2vw;
+    transform: rotate(90deg);
+}
+
+
+#title-page{
+    align-items: center;
+}
+
+.title-area{
+    width:40%;
+    height:93%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-con{
+    width:60%;
+    height: 30%;
+}
+
+.upper{
+    width:20%;
+    height: 30%;
+    font-family: 'rose';
+    display:flex;
+    justify-content: center;
+    font-size: 5vw;
+    color:#40404017;
+}
+
+.downer{
+    width:20%;
+    height: 30%;
+    font-family: 'rose';
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+    font-size: 5vw;
+    color:#40404017;
+}
+
+.title1{
+    width:100%;
+    height: 20%;
+    font-size: 1.2vw;
+    color:#aaa;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.title2{
+    width:100%;
+    height: 50%;
+    font-size: 4vw;
+    font-weight: 900;
+    color:#404040;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title3{
+    width:100%;
+    height: 30%;
+    font-size: 2vw;
+    font-weight: 900;
+    color:#ff9b89;
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.scroll-Me{
+    width:100%;
+    height: 7%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrollMe, .arrow{
+    height:50%;
+    font-size: 1.2vw;
+    color:#aaa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* profile-page */
+.about{
+    width:100%;
+    height:10%;
+    display: flex;
+    align-items: center;
+    padding-left:30px;
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.about-con{
+    width:100%;
+    height:90%;
+    display:flex;
+}
+
+.mypic{
+    width:40%;
+    height:100%;
+}
+
+.info{
+    width:60%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro{
+    width:90%;
+    height: 30%;
+}
+
+.intro-tit,.history-tit,.license-tit{
+    width:100%;
+    height: 20%;
+    display:flex;
+    align-items: center;
+    font-size: 1.2vw;
+    font-weight: 900;
+}
+
+.intro-con, .history-con, .license-con{
+    width:100%;
+    height: 80%;
+    border-left: solid 3px #ff9b89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history{
+    width:90%;
+    height: 30%;
+}
+
+.history-con1, .history-con2, .history-con3{
+    width:95%;
+    height:30%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.history-con1-date, .history-con2-date, .history-con3-date{
+    width:20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.history-con1-con, .history-con2-con, .history-con3-con{
+    width:77%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+.license{
+    width:90%;
+    height: 30%;
+}
+
+.license-con1, .license-con2, .license-con3{
+    width:95%;
+    height:30%;
+    display:flex;
+}
+
+.license-con1-date, .license-con2-date, .license-con3-date{
+    width:15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.license-con1-con, .license-con2-con, .license-con3-con{
+    width:77%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}

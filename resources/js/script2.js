@@ -2,18 +2,29 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//options here
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-		autoScrolling: true,
-		scrollHorizontally: true,
+        autoScrolling: true,
+        scrollHorizontally: true,
         lockAnchors:false,
-        anchors:['first','second','third','fourth'],
-        navigation:false,
-        navigationPostition:'right',
-        navigationTooltips:['인트로','과거','현재','미래'],
-        sectionsColor:['#F5F6F7','#F5F6F7','#ffeecc','#ffeeaa'],
-        showActiveTooltip:true,
+        anchors:['first','second','third','fourth','last'],
+        afterLoad: function (anchorLink, index) {
+          if (index == 2) {
+            // $('.about-con').css('opacity','100');
+            $('.about-con').fadeIn()
+            
+          }
+          
+    
+        },
+        navigation:true,
+        navigationPosition: 'left',
+        navigationTooltips:['home','과거','현재','미래'],
+        sectionsColor:['#F5F6F7','#F5F6F7','#F5F6F7','#F5F6F7','#F5F6F7'],
+        showActiveTooltip: true,
         sectionSelector:'.section',
         slideSelector:'.slide',
-        slidesNavigation:false,
+        slidesNavigation:true,
+        
+        
 	});
 
 	//methods
@@ -78,6 +89,10 @@ $(document).ready(function() {
       newsp.appendChild(document.createTextNode(news[q].substring(e)));
     }
 
+    // SLIDE
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
 
-
+//con effect
 
